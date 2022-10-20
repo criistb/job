@@ -293,7 +293,7 @@ Person.fillna(" ",inplace=True)
 
 Person['Emp Name'] = Person['Emp First Name']+" "+Person['Emp Mid Name']+" "+Person['Emp Last Name']+" "+Person['Emp Second Last Name']
 
-cols = ["Emp Last Name", "Emp Mid Name", "Emp Second Last Name"]
+cols = ["Emp First Name", "Emp Last Name", "Emp Mid Name", "Emp Second Last Name"]
 
 Person.drop(columns=[col for col in  Person if col in cols], inplace=True)
 
